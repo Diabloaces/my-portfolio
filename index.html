@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditya Rishi Jaggi — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600;1,700&family=Playfair+Display:wght@400;500&family=DM+Mono:wght@300;400&family=Jost:wght@300;400;500&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="nav-logo">[ADITYA RISHI JAGGI]</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#whatido">What I Do</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="hamburger" onclick="document.getElementById('drawer').classList.add('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
+
+<div class="drawer" id="drawer">
+  <div class="drawer-close" onclick="document.getElementById('drawer').classList.remove('open')">&times;</div>
+  <a href="#work" onclick="document.getElementById('drawer').classList.remove('open')">Work</a>
+  <a href="#whatido" onclick="document.getElementById('drawer').classList.remove('open')">What I Do</a>
+  <a href="#contact" onclick="document.getElementById('drawer').classList.remove('open')">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-panel">
+    <div class="hero-copy">
+      <span class="hi">Hi, I'm</span>
+      <h1 class="hero-name">Aditya</h1>
+      <span class="hero-roles">Developer&nbsp;&nbsp;•&nbsp;&nbsp;Designer&nbsp;&nbsp;•&nbsp;&nbsp;Learner</span>
+      <div class="hero-ctas">
+        <a href="#work" class="btn-filled">View Work</a>
+        <a href="#contact" class="btn-ghost">Let's Talk →</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/cover.png" alt="Cover image">
+    </div>
+  </div>
+</section>
+
+<section id="life" style="padding: 100px 48px; max-width: 1200px; margin: 0 auto;">
+  <div class="life-section">
+    <h3 class="life-label">What Drives Me</h3>
+    <div class="polaroids">
+      <div class="polaroid"><img src="images/code.jpeg" alt="Code photo"></div>
+      <div class="polaroid"><img src="images/pahad.jpg" alt="Pahad photo"></div>
+      <div class="polaroid"><img src="images/chess.jpg" alt="Chess photo"></div>
+      <div class="polaroid"><img src="images/food.jpeg" alt="Food photo"></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="quote-banner">
+  <p class="quote-text">"Every great idea starts with the <em>curiosity</em> to learn, played out on a chessboard of possibilities — where minimal moves make the maximum impact"</p>
+  <span class="quote-attr">— Aditya Rishi Jaggi</span>
+</div>
+
+<!-- WORK -->
+<section id="work">
+  <h2 class="work-heading">The <em>work</em></h2>
+  <div class="work-grid">
+    <div class="work-col wide">
+      <div class="work-item">
+        <img src="images/work1.jpg" alt="Work 1">
+        <div class="work-overlay">
+          <span class="work-cat">Web App</span>
+          <span class="work-title">Project One</span>
+        </div>
+      </div>
+      <div class="work-item">
+        <img src="images/work3.jpeg" alt="Work 3">
+        <div class="work-overlay">
+          <span class="work-cat">UI / UX</span>
+          <span class="work-title">Project Three</span>
+        </div>
+      </div>
+    </div>
+    <div class="work-col narrow">
+      <div class="work-item">
+        <img src="images/work2.jpeg" alt="Work 2">
+        <div class="work-overlay">
+          <span class="work-cat">Design</span>
+          <span class="work-title">Project Two</span>
+        </div>
+      </div>
+      <div class="work-item">
+        <img src="images/work4.jpeg" alt="Work 4">
+        <div class="work-overlay">
+          <span class="work-cat">Branding</span>
+          <span class="work-title">Project Four</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I DO -->
+<section id="whatido">
+  <h2 class="services-heading">What I <em>do</em></h2>
+  <div class="services-grid">
+    <div class="service-card reveal" style="--reveal-delay:0s;">
+      <span class="service-num">01</span>
+      <h3 class="service-title">Full-Stack Web Development</h3>
+      <p class="service-body">Building complete web applications from database to interface — clean architecture, considered performance, and code that's built to last.</p>
+    </div>
+    <div class="service-card reveal" style="--reveal-delay:0.12s;">
+      <span class="service-num">02</span>
+      <h3 class="service-title">UI / UX Design</h3>
+      <p class="service-body">Designing interfaces people enjoy using — intentional layouts, clear hierarchy, and details that make a product feel considered.</p>
+    </div>
+    <div class="service-card reveal" style="--reveal-delay:0.24s;">
+      <span class="service-num">03</span>
+      <h3 class="service-title">Content Creation</h3>
+      <p class="service-body">Crafting visual and written content that communicates clearly and carries a consistent, considered point of view.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-grid">
+    <div>
+      <h2 class="contact-heading reveal" id="contactParallax">Let's make<br>something <em>great</em>.</h2>
+      <div class="social-list">
+        <a href="mailto:aditya.rishi.me@gmail.com" class="social-row">
+          <span class="social-label">Email</span>
+          <span class="social-value">aditya.rishi.me@gmail.com</span>
+        </a>
+        <a href="https://instagram.com/theaditya_jaggi" target="_blank" class="social-row">
+          <span class="social-label">Instagram</span>
+          <span class="social-value">@theaditya_jaggi</span>
+        </a>
+        <a href="https://www.linkedin.com/in/aditya-rishi-jaggi-211101327/" target="_blank" class="social-row">
+          <span class="social-label">LinkedIn</span>
+          <span class="social-value">aditya-rishi-jaggi</span>
+        </a>
+      </div>
+    </div>
+    <div>
+      <form onsubmit="event.preventDefault(); this.reset(); document.getElementById('formMsg').style.opacity=1;">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+        <p id="formMsg" style="opacity:0;transition:opacity .5s;margin-top:16px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;color:var(--accent);">Message sent — thank you.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Aditya Rishi Jaggi</div>
+  <div class="footer-copy">© 2026 — All rights reserved</div>
+  <div class="footer-links">
+    <a href="https://instagram.com/theaditya_jaggi" target="_blank">Instagram</a>
+    <a href="https://www.linkedin.com/in/aditya-rishi-jaggi-211101327/" target="_blank">LinkedIn</a>
+    <a href="mailto:aditya.rishi.me@gmail.com">Email</a>
+  </div>
+</footer>
+
+<script src="javascript.js"></script>
+</body>
+</html>
